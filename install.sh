@@ -45,7 +45,7 @@ if ! curl -sS "${packageUrl}" | tar xz; then
   exit 1
 fi
 
-chmod +x install-full.sh
+chmod +x unms-0.13.3/install-full.sh
 ./install-full.sh ${args} --version "${version}"
 
 cd ~
