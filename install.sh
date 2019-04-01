@@ -14,7 +14,7 @@ if [[ " ${args}" =~ ${branchRegex} ]]; then
   branch="${BASH_REMATCH[1]}"
 fi
 echo "branch=${branch}"
-repo="192.168.69.14/home/ace/Desktop/UNMS"
+repo="192.168.69.14/home/ace/Desktop/UNMS/${branch}"
 #!repo="https://raw.githubusercontent.com/Ubiquiti-App/UNMS/${branch}"
 
 versionRegex=" --version ([^ ]+)"
