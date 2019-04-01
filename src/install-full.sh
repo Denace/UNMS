@@ -14,9 +14,8 @@ ALTERNATIVE_HTTP_PORT="8080"
 ALTERNATIVE_HTTPS_PORT="8443"
 ALTERNATIVE_NETFLOW_PORT="2056"
 
-
-COMPOSE_PROJECT_NAME="unms"
-USERNAME=${UNMS_USER:-"unms_ct"}
+COMPOSE_PROJECT_NAME="unms1"
+USERNAME=${UNMS_USER:-"unms1"}
 if getent passwd ${USERNAME} >/dev/null; then
   HOME_DIR="$(getent passwd ${USERNAME} | cut -d: -f6)"
 else
